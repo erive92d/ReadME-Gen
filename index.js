@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const markdown = require('./utils/generateMarkDown')
 
 
 inquirer.prompt([
@@ -61,53 +62,8 @@ inquirer.prompt([
 
     }
 ])
-.then(({
-    title,
-    installation,
-    contribution,
-    instructions,
-    license,
-    github,
-    linkedin,
-    email
-}) => {
-    
-    const template = `# ${title}
-    
-    * [Installation](#installation)
-
-    * [Usage](#usage)
-
-    * [Contribution](#contribution)
-
-    * [Credits](#credits)
-
-    * [License](#license)
-
-    * Installation
-    - ${installation}
-
-    ##Contribution
-    - ${contribution}
-
-    ## instructions
-    - ${instructions}
-
-    ## License
-    - ${license}
-
-    # Contact
-    * Github: ${github}
-    * LinkedIn: ${linkedin}
-    * E-mail: ${email}
-    `
-
-    createNewFile(title,template)
-}
-)
-
-function createNewFile(filename,data) {
-    fs.writeFile(`./${filename.toLowerCase().split(' ').join('')}.md`,data,(err)=> {
-        err? console.log(err) : console.log('ReadME generated Successfully')
+.then((answers) => {
+    fs.writeFile('README.md', markdown(answers), err => {
+        err ? console.log(err) : console.log('Success')
     })
-}
+})
