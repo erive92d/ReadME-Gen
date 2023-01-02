@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const markdown = require('./utils/generateMarkDown')
+const templates = require('./template')
 
 
 inquirer.prompt([
@@ -13,30 +13,70 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        message: 'How to install your app>',
+        message: 'What was your motivation behind this project?',
+        name : 'motives',
+        validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
+    },
+    {
+        type: 'input',
+        message: 'Why did you create this project?',
+        name : 'why',
+        validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
+    },
+    {
+        type: 'input',
+        message: 'What problems did you encounter while making this project?',
+        name : 'problem',
+        validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
+    },
+    {
+        type: 'input',
+        message: 'What did you learn after creating this project?',
+        name : 'learn',
+        validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
+    },
+    
+    {
+        type: 'input',
+        message: 'What packages needed to be installed before running this project?',
         name:'installation',
         validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
 
     },
     {
         type: 'input',
-        message: 'Contribution?',
-        name:'contribution',
+        message: 'Credits',
+        name : 'credits',
+        validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
+    },
+
+    {
+        type: 'input',
+        message: 'How can users contribute?',
+        name:'contribute',
         validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
 
     },
     {
         type: 'input',
-        message: 'How to use your app?',
-        name:'instructions',
+        message: 'What are the key features of your project?',
+        name:'feature',
         validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
 
-    },
+    }
+    ,
     {
         type: 'list',
         message: 'LICENSE',
         name:'license',
-        choices: ['MIT','GPL','APACHE','GNU','N/A'],
+        choices: ['MIT','Apache','BSD','MPL','GNU','N/A'],
+        validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
+
+    },
+    {
+        type: 'input',
+        message: 'How to run a test for your project?',
+        name:'test',
         validate: (value) => {if (value){ return true} else { return 'I need a value to continue'}}
 
     },
@@ -63,7 +103,7 @@ inquirer.prompt([
     }
 ])
 .then((answers) => {
-    fs.writeFile('README.md', markdown(answers), err => {
+    fs.writeFile('README.md', templates(answers), err => {
         err ? console.log(err) : console.log('Success')
     })
 })

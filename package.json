@@ -1,15 +1,14 @@
 {
   "dependencies": {
-    "axios": "^1.2.1",
-    "inquirer": "^8.2.4",
-    "markdown-toc": "^1.2.0"
+    "inquirer": "^8.2.4"
   },
   "name": "readme-gen",
   "description": "readme generator",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
