@@ -3,6 +3,8 @@ const fs = require('fs');
 const templates = require('./template')
 
 
+//QUESTIONS USING INQUIRER PROMPT
+//VALIDATE WILL ENSURE USER WILL INPUT SOMETHING
 inquirer.prompt([
     {
         type: 'input',
@@ -103,6 +105,8 @@ inquirer.prompt([
     }
 ])
 .then((answers) => {
+    // ANSWERS WILL GO STRAIGHT TO TEMPLATES FUNCTION
+    // README.MD WILL BE CREATED, OVERWRITE IF ALREADY EXISTED
     fs.writeFile('README.md', templates(answers), err => {
         err ? console.log(err) : console.log('Success')
     })
