@@ -1,19 +1,19 @@
 
-# Professional Readme Generator
+# Readme Generator
 
 ## Description
 
 - What was your motivation?
-I want to be able to help others struggling to make Readme file for their project
+Improve my knwodlege
 
 - Why did you build this project?
-It is something that I need myself and others in order to create a readme file
+to help others
 
 - What problem does it solve?
-The main problem that I've encountered is making table of contents for readme file
+Building templates
 
 - What did you learn?
-I learned how inquirer works, importing or exporting modules, creating node packaes
+How inqurier works
 
 
 ## Table of Contents
@@ -30,7 +30,7 @@ I learned how inquirer works, importing or exporting modules, creating node pack
 
 ## Installation
 Package(s) needed in order for this project to run:
-inquirer
+inqurier
 
 ## Usage
 To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it.
@@ -41,26 +41,28 @@ To add a screenshot, create an assets/images folder in your repository and uploa
 
 ## Credits
 I give credits to:
-myself, youtube, tiktok, google
+myself
 
 ## License
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 The key features of this project:
-It includes table of contents, descriptions, and screenshots
+table
 
 ## How to Contribute
+fork 
+or
 The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-You can fork this repository
+
 
 ## Test
 To run a test of this project:
-run node index in your terminal
+node index
 
 ## Contacts
-If you have any questions, feel free to email me at, erive92d@gmail.com.
-Enjoyed this project? here more at erive92d@github.com.
-Are you looking for someone to employ? here's my LinkedIn erive92d@linkedin.comj.
+If you have any questions, feel free to email me at, asdasd.
+Enjoyed this project? here more at asdasd.
+Are you looking for someone to employ? here's my LinkedIn asdsd.
    
 

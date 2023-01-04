@@ -88,7 +88,7 @@ ${data.test}
 
 ## Contacts
 If you have any questions, feel free to email me at, ${data.email}.
-Enjoyed this project? here more at ${data.github}.
+Enjoyed this project? here's more at ${data.github}.
 Are you looking for someone to employ? here's my LinkedIn ${data.linkedin}.
    
 
