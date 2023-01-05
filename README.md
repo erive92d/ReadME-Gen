@@ -4,16 +4,16 @@
 ## Description
 
 - What was your motivation?
-To improve myself as a developer
+To improve myself as a student, and a future developer
 
 - Why did you build this project?
-Because I want to help myself and others create a Readme file easily
+To help myself and other developers create a ReadMe file
 
 - What problem does it solve?
-I had trouble with templating, and creating a table contents for Readme file
+I had problems with making table of contents for Readme file
 
 - What did you learn?
-I learned how Inquirer work, templating, and more
+I learned how inquirer work and how to connect between files using require and module.exports
 
 
 ## Table of Contents
@@ -30,7 +30,7 @@ I learned how Inquirer work, templating, and more
 
 ## Installation
 Package(s) needed in order for this project to run:
-Inquirer
+inquirer verion 8.2.4
 
 ## Usage
 To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it.
@@ -41,14 +41,14 @@ To add a screenshot, create an assets/images folder in your repository and uploa
 
 ## Credits
 I give credits to:
-Youtube, google, tiktok
+Professor, TA's, youtube, google
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 The key features of this project:
-Table of contents
+Table of contents, description, installation, etc.
 
 ## How to Contribute
 Fork this repo 
@@ -62,7 +62,7 @@ node index.js
 
 ## Contacts
 If you have any questions, feel free to email me at, erive92d@gmail.com.
-Enjoyed this project? here's more at erive92d@gmail.com.
+Enjoyed this project? here's more at erive92d@github.com.
 Are you looking for someone to employ? here's my LinkedIn erive92d@linkedin.com.
    
 
